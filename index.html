@@ -144,7 +144,7 @@
 
             // Store Score
             function storeScore(e) {
-                holder.push(score);
+                
                 localStorage.setItem("key", JSON.stringify(holder));
                 var x = JSON.parse(localStorage.getItem("key"));
                 points.setAttribute('value', x.join(' '));
@@ -238,6 +238,7 @@
                 //     points.setAttribute('value', '3');
                 // }
 
+                holder.push(score);
                 storeScore();
                 
                 header.setAttribute('value', 'Your Score is:');
