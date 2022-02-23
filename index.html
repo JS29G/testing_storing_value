@@ -32,6 +32,9 @@
             var score;
             var num = 0;
             
+            // Hide all but Start 
+            menu.setAttribute('position', '0 100 100');
+            points.setAttribute('position', '0 100 100');
             storeScore();
             
             var holder = [];
@@ -39,9 +42,7 @@
 
             var menu = document.getElementById('Menu');
             
-            // Hide all but Start 
-            menu.setAttribute('position', '0 100 100');
-            points.setAttribute('position', '0 100 100');
+            
             
             // Change to Question 1
             function changeQuestion1(e) {
