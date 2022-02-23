@@ -1,0 +1,1 @@
+# testing_storing_value
